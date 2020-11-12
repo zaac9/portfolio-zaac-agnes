@@ -1,6 +1,7 @@
 html {
 	margin: 0;
 	padding: 0;
+	color: #0A090A;
 }
 
 body {
@@ -16,6 +17,14 @@ body {
 h1 {
 	padding: 5% 0;
 	margin: 0;
+	font-size: 2.5rem;
+	color: #23B2F9;
+}
+h2 {
+	opacity: 0.8;
+}
+p {
+	opacity: 0.74;
 }
 
 .project-img {
@@ -24,6 +33,11 @@ h1 {
 .project-img img{
 	/*display: block;*/
 	margin: 0 auto;
+	padding-bottom: 5%;
+}
+
+.styleguide-img {
+	width: 100%;
 }
 
 /* STYLING MAIN NAVIGATION BAR */
@@ -52,6 +66,7 @@ li.grid-main-nav a {
 	padding: 1.5rem 1.5rem;
 	text-decoration: none;
 	font-size: 1.4rem;
+	transition: 0.35s;
 }
 li.grid-main-nav a:hover, li.grid-main-nav a:focus {
 	background-color: #FCFCFC;
@@ -65,7 +80,7 @@ li.grid-main-nav a:hover, li.grid-main-nav a:focus {
 }
 
 .content {
-	margin: 0 20%;
+	margin: 0 22%;
 	padding: 5% 0;
 }
 

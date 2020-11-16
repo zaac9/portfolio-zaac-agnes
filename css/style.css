@@ -39,6 +39,7 @@ h2 {
 	top: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	display: block;
 }
 .mouse {
 	opacity: 0.3;

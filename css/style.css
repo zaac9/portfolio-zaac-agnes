@@ -4,10 +4,16 @@
 	light blue-> color: #58D7F9;
 	white BG: color: #FCFCFC;
 */
+/*font-family: 'Quattrocento', serif;*/
+
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat';;
+	font-family: 'Montserrat';
+}
+h1, h2, h3, h4 {
+	font-family: 'Quattrocento', serif;
+	/*font-weight: 400;*/
 }
 
 /* SETTING BACKGROUND COLOR - DIV CONTAINER HOLDING EVERYTHING ON PAGE*/
@@ -27,11 +33,11 @@
 /* STYLING HOME SCREEN*/
 .home-content {
 	padding: 20% 20%;
-	padding-bottom: 35%;
+	padding-bottom: 30%;
 }
 h1.home-title {
-	font-size: 3.3rem;
-	font-weight: 600;
+	font-size: 4.4rem;
+	font-weight: 400;
 	color: #23B2F9;
 	text-align: center;
 }
@@ -41,6 +47,7 @@ h2.home-subtitle {
 	font-weight: 400;
 	color: #58D7F9;
 	text-align: center;
+	padding-top: 1%;
 }
 
 /* STYLING PROJECT GRID SHOWCASE */

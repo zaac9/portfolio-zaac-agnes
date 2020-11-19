@@ -44,6 +44,12 @@
 		 url('../fonts/Quan-Bold.ttf') format('truetype');
 }
 
+@font-face {font-family: "WKSROY+Peckham-Regular"; 
+src: url("//db.onlinewebfonts.com/t/22daa70546f2ddbaec2e9738cac75973.eot"); 
+src: url("//db.onlinewebfonts.com/t/22daa70546f2ddbaec2e9738cac75973.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/22daa70546f2ddbaec2e9738cac75973.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/22daa70546f2ddbaec2e9738cac75973.woff") format("woff"), url("//db.onlinewebfonts.com/t/22daa70546f2ddbaec2e9738cac75973.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/22daa70546f2ddbaec2e9738cac75973.svg#WKSROY+Peckham-Regular") format("svg"); }
+
+
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';

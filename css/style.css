@@ -1,45 +1,97 @@
+ /*GUIDE:
+ Colors:
+ 	dark blue-> color: #23B2F9;
+	light blue-> color: #58D7F9;
+	white BG: color: #FCFCFC;
+*/
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat';;
 }
 
-/* SETTING BACKGROUND COLOR */
+/* SETTING BACKGROUND COLOR - DIV CONTAINER HOLDING EVERYTHING ON PAGE*/
 .background {
 	background-color: #23B2F9;
-	/*padding-bottom: 2%;*/
+	padding-bottom: 2%;
 }
-
+/* ALL CONTENT SHOULD BE WRAPPED INSIDE A ".container" ELEMENT*/
 .container {
 	margin: 8% 2%;
 	margin-top: 0;
 	background-color: #FCFCFC;
+	/*background-color: white;*/
 }
 
-h1 {
-	font-size: 3.3rem;
-	font-weight: 600;
-	color: #23B2F9;
-}
-
-h2 {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: #58D7F9;
-}
 
 /* STYLING HOME SCREEN*/
 .home-content {
-	padding: 15% 20%;
+	padding: 20% 20%;
+	padding-bottom: 35%;
+}
+h1.home-title {
+	font-size: 3.3rem;
+	font-weight: 600;
+	color: #23B2F9;
+	text-align: center;
 }
 
-/* MOUSE SCROLL ANIMATION */
+h2.home-subtitle {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #58D7F9;
+	text-align: center;
+}
+
+/* STYLING PROJECT GRID SHOWCASE */
+.project-grid {
+	display: flex;
+/*	flex-direction: row;
+	flex-wrap: nowrap;*/
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0 5%;
+}
+.project-item {
+	width: 33.3333%;
+	/*height: 25rem;*/
+	padding: 10% 0;
+	margin: 2%;
+	border: 1px solid black;
+}
+h3.project-show-title {
+	text-align: center;
+	font-size: 2rem;
+
+}
+h4.project-show-subtitle {
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+
+/*img.project-showcase {
+	width: 100%;
+}*/
+
+
+
+
+
+
+
+
+/* EXTRAS */
+
+/* MOUSE SCROLL ANIMATION ON HOMEPAGE*/
+/* from: https://www.youtube.com/watch?v=FdFdP4DDz3M*/
 .middle {
 	position: absolute;
-	top: 90%;
+	top: 95%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	display: block;
+	/*display: block;*/
 }
 .mouse {
 	opacity: 0.3;
@@ -60,11 +112,11 @@ h2 {
 	transform: translateX(-50%);
 	border-radius: 50%;
 	opacity: 1;
-	animation: mouse 2s infinite;
+	animation: mouse 1.4s infinite ease-out;
 }
 @keyframes mouse {
 	from {
-		opacity: 1;
+		opacity: 0.6;
 		top: 65px;
 	}
 	to {
@@ -73,9 +125,8 @@ h2 {
 	}
 }
 
-
 /* STYLING MAIN NAVIGATION BAR */
-.nav-container {
+.nav-bar {
 	margin: 0 2%;
 }
 ul {
@@ -107,4 +158,4 @@ li.grid-main-nav a:hover, li.grid-main-nav a:focus {
 	color: #23B2F9;
 }
 
-/* STYLING FOR MAIN NAV END*/
+/* STYLING FOR MAIN NAV END

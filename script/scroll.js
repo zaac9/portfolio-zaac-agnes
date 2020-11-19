@@ -4,7 +4,7 @@
 mouseIcon = document.querySelector('.middle');
 
 $(window).bind('scroll', function(){
-	if ($(window).scrollTop() > 15) {
+	if ($(window).scrollTop() > 100) {
 		$(mouseIcon).hide();
 	} else {
 		$(mouseIcon).show();

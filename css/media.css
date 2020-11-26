@@ -7,10 +7,18 @@
 	.line {
 		width: 30px;
 		height: 3px;
-		background: #FCFCFC;
 		margin: 7px;
 		border-radius: 3px;
+		background: #FCFCFC;
+		-webkit-transition: background: 0.2s ease-in-out;
+		transition: background: 0.2s ease-in-out;
 	}
+/*	.line-color-start {
+		background: #FCFCFC;
+	}
+	.line-color-end {
+		background: #23B2F9;
+	}*/
 	nav.nav-bar {
 		position: relative;
 	}
@@ -29,8 +37,8 @@
 		height: 100vh;
 		width: 100vw;
 		flex-direction: column;
-		clip-path: circle(0% at 90% -10%);
 		-webkit-clip-path: circle(0% at 90% -10%);
+		clip-path: circle(0% at 90% -10%);
 		transition: all 0.7s ease-in-out;
 		pointer-events: none;
 	}

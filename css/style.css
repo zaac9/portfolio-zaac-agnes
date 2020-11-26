@@ -15,7 +15,8 @@
 html{
 	scroll-behavior: smooth;
 }
-h1, h2, h3, h4 {
+/*removed h4 from below?*/
+h1, h2, h3 {
 	font-family: 'Quattrocento', serif;
 	/*font-weight: 400;*/
 }

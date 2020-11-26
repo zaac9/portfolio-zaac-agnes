@@ -110,6 +110,9 @@ h4.project-show-subtitle {
 nav.nav-bar {
 	height: 10vh;
 	background: #23B2F9;
+	position: fixed;
+	width: 100%;
+	z-index: 30;
 }
 
 ul.nav-links {

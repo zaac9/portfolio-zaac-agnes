@@ -1,9 +1,18 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".grid-main-nav");
+
+let lines = document.querySelectorAll('.line');
+let navbar = document.querySelector('.nav-bar');
+
+let hamburgerHeight = hamburger.offsetHeight;
+let navbarHeight = navbar.offsetHeight;
+
 let width=window.innerWidth;
 
-// if(screen.width<768) {
+// console.log("hamburger height: " + hamburgerHeight + "navbar height: " + navbarHeight)
+
+//// Open Menu when click Hamburger
 hamburger.addEventListener("click", function() {
 	navLinks.classList.toggle("open");
 	console.log("clicked hamburger");
@@ -11,26 +20,19 @@ hamburger.addEventListener("click", function() {
 	links.forEach(function(link) {
 		link.classList.toggle("fade");
 
-	// 	link.addEventListener("click", function() {
-	// 		navLinks.classList.toggle("open");
-	// 		console.log("clicked a nav-link");
-	// 		// links.forEach(function(l){
-	// 		// 	l.classList.toggle("fade");
-	// 		// });
-	// 	})
-
 	});
 });
-// }
 
-// Close Nav Menu when clicking a link
+
+//// Close Nav Menu when clicking a link
 	links.forEach(function(link) {
 		link.addEventListener("click", function() {
 			if (screen.width<768) {
 				navLinks.classList.toggle("open");
 				console.log("clicked a nav-link");
 
-				// Toglle fade class so it works next time hamburger is clicked
+
+				//// Toggle fade class so it works next time hamburger is clicked
 				links.forEach(function(l){
 					l.classList.toggle("fade");
 				});
@@ -39,6 +41,28 @@ hamburger.addEventListener("click", function() {
 
 	});
 	
+//// Change Hamburger Color when user scrolls down
+$(window).scroll(function() {
+	var scroll=$(window).scrollTop();
+
+	if(navLinks.classList.contains("open")) {
+		lines.forEach(function(line) {
+			line.style.background="#FCFCFC";
+		});
+	} else {
+		// minus 7 is to compensate for hamburger padding at top
+		if(scroll >= navbarHeight - 7 -hamburgerHeight/2) {
+			lines.forEach(function(line) {
+				line.style.background="#23B2F9";
+			});
+
+		} else {
+			lines.forEach(function(line) {
+				line.style.background="#FCFCFC";
+			});
+		}
+	}
+});
 
 
 

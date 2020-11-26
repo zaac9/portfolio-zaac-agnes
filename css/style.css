@@ -24,11 +24,11 @@ h1, h2, h3 {
 /* SETTING BACKGROUND COLOR - DIV CONTAINER HOLDING EVERYTHING ON PAGE*/
 .background {
 	background-color: #23B2F9;
-	padding-bottom: 2%;
+	padding-bottom: 10vh;
 }
 /* ALL CONTENT SHOULD BE WRAPPED INSIDE A ".container" ELEMENT*/
 .container {
-	margin: 8% 2%;
+	/*margin: 8% 2%;*/
 	margin-top: 0;
 	background-color: #FCFCFC;
 	/*background-color: white;*/
@@ -71,11 +71,14 @@ h2.home-subtitle {
 	padding: 10% 0;
 	margin: 2%;
 	/*border: 1px solid black;*/
+	text-decoration: none;
+	color: #23B2F9;
 }
 .project-item:hover, .project-item:focus {
 	color: #58D7F9;
 	cursor: pointer;
 }
+
 
 h3.project-show-title {
 	text-align: center;
@@ -103,35 +106,6 @@ h4.project-show-subtitle {
 /* EXTRAS */
 
 
-/* STYLING MAIN NAVIGATION BAR */
-/*.nav-bar {
-	margin: 0 2%;
-}
-ul.nav-links {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	width: 100%;
-}
-li.grid-main-nav {
-	float: left;
-}
-li.grid-main-nav a {
-	display: block;
-	color: #FCFCFC;
-	text-align: center;
-	padding: 1.5rem 1.5rem;
-	text-decoration: none;
-	font-size: 1.4rem;
-	transition: 0.35s;
-}
-li.grid-main-nav a:hover, li.grid-main-nav a:focus {
-	background-color: #FCFCFC;
-	color: #23B2F9;
-}*/
- /*STYLING FOR MAIN NAV END*/
-
  /*NEW STYLING FOR NAVIGATION MENU*/
 nav.nav-bar {
 	height: 10vh;
@@ -150,15 +124,33 @@ ul.nav-links {
 	z-index: 10;
 }
 
-a.nav-anchor {
+li.grid-main-nav {
+	height: 100%;
+	flex-basis: 33.33%;
+	text-align: center;
+	/*margin: auto;*/
+	padding: 4% 0;
+	text-decoration: none;
 	color: #FCFCFC;
+	transition: 0.3s ease;
+}
+.grid-main-nav:hover, .grid-main-nav:focus {
+	background-color: #FCFCFC;
+	color: #23B2F9;
+	cursor: pointer;
+}
+
+a.nav-anchor {
 	text-decoration: none;
 	font-size: 1.3rem;
+	color: inherit;
 }
-a.nav-anchor:hover, a.nav-anchor:focus {
-	background-color: #FCFCFC;
-	color: #58D7F9;
-}
+
+
+/*a.nav-anchor:hover, a.nav-anchor:focus {*/
+	/*background-color: #FCFCFC;*/
+	/*color: #58D7F9;*/
+/*}*/
 
 
 
@@ -184,24 +176,26 @@ a.nav-anchor:hover, a.nav-anchor:focus {
 }
 .contact-form {
 	width: 100%;
-	padding: 5%;
+	padding: 10%;
 	/*removed white bg as it was casuing a problem with the email sign up button*/
 	/*background: white;*/
 }
-h3.contact-title {
-	color: #333;
+h4#contact-title {
+	color: #23B2F9;
 	font-size: 1.4rem;
-	font-weight: 500;
+	font-weight: 300;
+	padding-left: 2%
 }
 .input-box-contact {
 	position: relative; 
 	width: 100%;
 	margin-top: 2%;
+	padding-left: 2%;
 }
 .input-box-contact input.contact-input{
 	width: 100%;
-	/*padding: 4% 4%;*/
 	padding: 2% 0;
+	padding-left: 2%;
 	font-size: 1rem;
 	border: none;
 	border-bottom: 2px solid #333;
@@ -210,11 +204,9 @@ h3.contact-title {
 .input-box-contact textarea {
 	width: 100%;
 	padding: 4% 0;
-	/*margin: 3% 0;*/
-	margin-top: 3%;
+	padding-left: 2%;
 	font-size: 1rem;
 	border: none;
-	background-color: rgb(252, 252, 252);
 	border-bottom: 2px solid #333;
 	outline: none;
 	resize: none;
@@ -244,9 +236,8 @@ h3.contact-title {
 	color: #fff;
 	border: none;
 	cursor: pointer;
-	/*padding: 5%;*/
 	background-color: #58D7F9;
-	/*border-radius: 5%;*/
+	border: 1px solid #FCFCFC;
 	transition: 0.4s;
 }
 .input-box-contact input.contact-input[type="submit"]:hover,
@@ -259,10 +250,12 @@ h3.contact-title {
 	/*border-radius: 25%;*/
 	/*border: none;*/
 	cursor: pointer;
-	padding: 5%;
+	/*padding: 5%;*/
 	background-color: #fff;
 }
 /* STYLING FOR CONTACT END */
+
+
 
 /* MOUSE SCROLL ANIMATION ON HOMEPAGE*/
 /* from: https://www.youtube.com/watch?v=FdFdP4DDz3M*/

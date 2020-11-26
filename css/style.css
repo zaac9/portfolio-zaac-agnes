@@ -10,7 +10,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', 'Helvetica', sans-serif;
 }
 html{
 	scroll-behavior: smooth;
@@ -38,7 +38,7 @@ h1, h2, h3 {
 /* STYLING HOME SCREEN*/
 .home-content {
 	padding: 20% 20%;
-	/*padding-bottom: 30%;*/
+	padding-bottom: 30%;
 }
 h1.home-title {
 	font-size: 4.4rem;
@@ -83,12 +83,12 @@ h2.home-subtitle {
 h3.project-show-title {
 	text-align: center;
 	font-size: 2rem;
-
 }
+
 h4.project-show-subtitle {
 	text-align: center;
 	font-size: 1.4rem;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 
@@ -96,6 +96,35 @@ h4.project-show-subtitle {
 	width: 100%;
 }*/
 
+/* STYLING PROJECT PAGES*/
+#project-home {
+	padding-bottom: 10%;
+}
+.project-container {
+	padding: 0 20%;
+}
+.project-content {
+	padding: 4% 0;
+}
+h3.project-page-title {
+	font-family: 'Montserrat';
+	font-size: 1.6rem;
+	font-weight: 400;
+	/*padding: 1% 0;*/
+	padding-top: 5%;
+	color: #555;
+}
+p.project-text {
+	color: #666;
+	padding: 3% 0;
+	padding-right: 10%;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+}
+img.project-image {
+	max-width: 100%;
+	box-shadow: 0 0 0.6rem 0.4rem rgba(50, 50, 50, 0.1);
+}
 
 
 
@@ -110,7 +139,7 @@ h4.project-show-subtitle {
 nav.nav-bar {
 	height: 10vh;
 	background: #23B2F9;
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
 	z-index: 30;
 }
@@ -180,6 +209,7 @@ a.nav-anchor {
 .contact-form {
 	width: 100%;
 	padding: 10%;
+	padding-top: 15%;
 	/*removed white bg as it was casuing a problem with the email sign up button*/
 	/*background: white;*/
 }

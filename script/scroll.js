@@ -7,7 +7,7 @@ let mouseIcon = document.querySelector('.middle');
 $(window).bind('scroll', function(){
 	if ($(window).scrollTop() > 70) {
 		$(mouseIcon).hide();
-	} else {
+	} else if (screen.width > 820){
 		$(mouseIcon).show();
 	}
 });

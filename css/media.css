@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+	/*Display Burger Menu*/
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #FCFCFC;
+		margin: 7px;
+		border-radius: 3px;
+	}
+
+	nav.nav-bar {
+		position: relative;
+	}
+
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+	}
+
+	ul.nav-links {
+		position: fixed;
+		background: #23B2F9;
+		height: 100vh;
+		width: 100vw;
+		flex-direction: column;
+		clip-path: circle(0% at 90% -10%);
+		-webkit-clip-path: circle(0% at 90% -10%);
+		transition: all 1s ease-out;
+	}
+	.nav-links.open {
+		clip-path: circle(150% at 90% -10%);
+		-webkit-clip-path: circle(150% at 90% -10%);
+	}
+}

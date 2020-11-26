@@ -1,15 +1,19 @@
  /*GUIDE:
  Colors:
- 	dark blue-> color: #23B2F9;
-	light blue-> color: #58D7F9;
-	white BG: color: #FCFCFC;
+ 	Primary color - dark blue-> color: #23B2F9;
+	Secondary Color light blue-> color: #58D7F9;
+	Off White BG: color: #FCFCFC;
 */
 /*font-family: 'Quattrocento', serif;*/
 
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: 'Montserrat';
+}
+html{
+	scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
 	font-family: 'Quattrocento', serif;
@@ -33,7 +37,7 @@ h1, h2, h3, h4 {
 /* STYLING HOME SCREEN*/
 .home-content {
 	padding: 20% 20%;
-	padding-bottom: 30%;
+	/*padding-bottom: 30%;*/
 }
 h1.home-title {
 	font-size: 4.4rem;
@@ -65,8 +69,13 @@ h2.home-subtitle {
 	/*height: 25rem;*/
 	padding: 10% 0;
 	margin: 2%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
+.project-item:hover, .project-item:focus {
+	color: #58D7F9;
+	cursor: pointer;
+}
+
 h3.project-show-title {
 	text-align: center;
 	font-size: 2rem;
@@ -75,6 +84,7 @@ h3.project-show-title {
 h4.project-show-subtitle {
 	text-align: center;
 	font-size: 1.4rem;
+	font-weight: 200;
 }
 
 
@@ -90,6 +100,163 @@ h4.project-show-subtitle {
 
 
 /* EXTRAS */
+
+
+/* STYLING MAIN NAVIGATION BAR */
+/*.nav-bar {
+	margin: 0 2%;
+}
+ul.nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+li.grid-main-nav {
+	float: left;
+}
+li.grid-main-nav a {
+	display: block;
+	color: #FCFCFC;
+	text-align: center;
+	padding: 1.5rem 1.5rem;
+	text-decoration: none;
+	font-size: 1.4rem;
+	transition: 0.35s;
+}
+li.grid-main-nav a:hover, li.grid-main-nav a:focus {
+	background-color: #FCFCFC;
+	color: #23B2F9;
+}*/
+ /*STYLING FOR MAIN NAV END*/
+
+ /*NEW STYLING FOR NAVIGATION MENU*/
+nav.nav-bar {
+	height: 10vh;
+	background: #23B2F9;
+}
+
+ul.nav-links {
+	display: flex;
+	list-style-type: none;
+	width: 50%;
+	height: 100%;
+	/*background-color: red;*/
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+	z-index: 10;
+}
+ 
+a.nav-anchor {
+	color: #FCFCFC;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+
+
+
+/* STYLING FOR CONTACT */
+.contact {
+	position: relative;
+	/*min-height: 100vh;*/
+	max-width: 100vw;
+	padding: 5% 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container-contact {
+	width: 100%;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+}
+.contact-form {
+	width: 100%;
+	padding: 5%;
+	/*removed white bg as it was casuing a problem with the email sign up button*/
+	/*background: white;*/
+}
+h3.contact-title {
+	color: #333;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+.input-box-contact {
+	position: relative; 
+	width: 100%;
+	margin-top: 2%;
+}
+.input-box-contact input.contact-input{
+	width: 100%;
+	/*padding: 4% 4%;*/
+	padding: 2% 0;
+	font-size: 1rem;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+}
+.input-box-contact textarea {
+	width: 100%;
+	padding: 4% 0;
+	/*margin: 3% 0;*/
+	margin-top: 3%;
+	font-size: 1rem;
+	border: none;
+	background-color: rgb(252, 252, 252);
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.input-box-contact span {
+	left: 0;
+	font-size: 1rem;
+/*	padding: 4% 0;
+	padding-bottom: 10%;*/
+	margin: 3% 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.input-box-contact input.contact-input:focus ~ span,
+.input-box-contact input.contact-input:valid ~ span,
+.input-box-contact textarea:focus ~ span,
+.input-box-contact textarea:valid ~ span {
+	color: #58D7F9;
+	font-size: 0.8rem;
+	transform: translateY(-1.5rem);
+}
+.input-box-contact input.contact-input[type="submit"] {
+	font-size: 1.2rem;
+	font-weight: 500;
+	width: 100%;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	/*padding: 5%;*/
+	background-color: #58D7F9;
+	/*border-radius: 5%;*/
+	transition: 0.4s;
+}
+.input-box-contact input.contact-input[type="submit"]:hover,
+ .input-box-contact input.contact-input[type="submit"]:focus{
+	font-size: 1.2rem;
+	font-weight: 500;
+	width: 100%;
+	color: #58D7F9;
+	border: 1px solid #58D7F9;
+	/*border-radius: 25%;*/
+	/*border: none;*/
+	cursor: pointer;
+	padding: 5%;
+	background-color: #fff;
+}
+/* STYLING FOR CONTACT END */
 
 /* MOUSE SCROLL ANIMATION ON HOMEPAGE*/
 /* from: https://www.youtube.com/watch?v=FdFdP4DDz3M*/
@@ -130,39 +297,14 @@ h4.project-show-subtitle {
 		opacity: 0;
 		top: 15px;
 	}
+
 }
 
-/* STYLING MAIN NAVIGATION BAR */
-.nav-bar {
-	margin: 0 2%;
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	/*background-color: none;*/
-	/*position: fixed;*/
-	/*top:0;*/
-	width: 100%;
-}
+/* MOUSE SCROLL ANIMATION END*/
 
-li.grid-main-nav {
-	float: left;
-}
 
-li.grid-main-nav a {
-	display: block;
-	color: #FCFCFC;
-	text-align: center;
-	padding: 1.5rem 1.5rem;
-	text-decoration: none;
-	font-size: 1.4rem;
-	transition: 0.35s;
-}
-li.grid-main-nav a:hover, li.grid-main-nav a:focus {
-	background-color: #FCFCFC;
-	color: #23B2F9;
-}
 
-/* STYLING FOR MAIN NAV END
+
+
+
+

@@ -7,6 +7,7 @@
 
 	<!-- <link rel="stylesheet" href="css/main.css"> -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
@@ -16,47 +17,85 @@
 	<div class="background">
 		<!-- <div class="container"> -->
 		<!-- <div class= "nav-container"> -->
+
 			<nav aria-label="Primary Navigation Bar" class="nav-bar" role="menubar">
+				<div class="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
 				<ul class="nav-links">
 					<li class="grid-main-nav">
-						<a href="" role="menuitem">About</a>
+						<a href="" role="menuitem" class="nav-anchor">About</a>
 					</li>
 					<li class="grid-main-nav">
-						<a href="" role="menuitem">Work</a>
+						<a href="#project-showcase" role="menuitem" class="nav-anchor">Work</a>
 					</li>
 					<li class="grid-main-nav">
-						<a href="" role="menuitem">Contact</a>
+						<a href="#contact" role="menuitem" class="nav-anchor">Contact</a>
 					</li>
 				</ul>
 			</nav>
+
 		<!-- </div> -->
 
 		<div class="container">
-			<div class="home-content">
-				<h1 class="home-title">Hello, I'm Zaac Agnes</h1>
-				<h2 class="home-subtitle">I do UX Design and Front-End Web Development</h2>
-			</div>
-			<div class="middle">
-				<div class="mouse">
-					
+			<section id="home">
+				<div class="home-content">
+					<h1 class="home-title">Hello, I'm Zaac Agnes</h1>
+					<h2 class="home-subtitle">I do UX Design and Front-End Web Development</h2>
 				</div>
-			</div>
+				<div class="middle">
+					<div class="mouse">
+						
+					</div>
+				</div>
+			</section>
 
-			<div class="project-grid">
-				<div class="project-item" id="seoul">
-					<!-- <img class="project-showcase" src="img/seoul/titlepage.png" alt=""> -->
 
-					<h3 class="project-show-title">Seoul</h3>
-					<h4 class="project-show-subtitle">Visual Design</h4>
+			<section id="project-showcase">
+				<div class="project-grid">
+					<div class="project-item" id="seoul">
+						<!-- <img class="project-showcase" src="img/seoul/titlepage.png" alt=""> -->
+						<h3 class="project-show-title">Seoul</h3>
+						<h4 class="project-show-subtitle">Visual Design</h4>
+					</div>
+					<div class="project-item" id="discord">
+						<h3 class="project-show-title">Discord Feature</h3>
+						<h4 class="project-show-subtitle">UX Design</h4>
+					</div>
+					<div class="project-item">
+						
+					</div>
 				</div>
-				<div class="project-item" id="discord">
-					<h3 class="project-show-title">Discord Feature</h3>
-					<h4 class="project-show-subtitle">UX Design</h4>
+			</section>
+
+			<section id="contact">
+				<div class="container-contact">
+					<!-- Might want to chagne below to col-1-of-2 -->
+					<div class="contact-form">
+						<form action="barcandy">
+							<h3 id="contact-title">Feel free to shoot me a message</h3>
+							<div class="input-box-contact">
+								<input type="text" name="name" required="required" class="contact-input">
+								<span>Full Name</span>
+							</div>
+							<div class="input-box-contact">
+								<input type="text" name="email" required="required" class="contact-input">
+								<span>Email</span>
+							</div>
+							<div class="input-box-contact">
+								<!-- <textarea required="required" name="" id="" cols="30" rows="8"></textarea> -->
+								<textarea required="required" name="message" rows="5"></textarea>
+								<span>Type your message</span>
+							</div>
+							<div class="input-box-contact">
+								<input type="submit" name="submit" value="Send" class="contact-input">
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="project-item">
-					
-				</div>
-			</div>
+			</section>
 
 
 <!-- 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Voluptate voluptas laudantium maxime exercitationem, earum officiis, facere, aliquam iste veniam velit numquam consectetur quasi totam. Natus perferendis nobis eum adipisci temporibus.</p>

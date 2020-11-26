@@ -1,3 +1,7 @@
+
+
+
+
 @media screen and (max-width: 768px) {
 	/*Display Burger Menu*/
 	.line {
@@ -7,19 +11,17 @@
 		margin: 7px;
 		border-radius: 3px;
 	}
-
 	nav.nav-bar {
 		position: relative;
 	}
-
 	.hamburger {
 		position: absolute;
 		cursor: pointer;
 		right: 5%;
 		top: 50%;
 		transform: translate(-5%, -50%);
+		z-index: 20;
 	}
-
 	ul.nav-links {
 		position: fixed;
 		background: #23B2F9;
@@ -28,10 +30,38 @@
 		flex-direction: column;
 		clip-path: circle(0% at 90% -10%);
 		-webkit-clip-path: circle(0% at 90% -10%);
-		transition: all 1s ease-out;
+		transition: all 0.7s ease-in-out;
+		pointer-events: none;
 	}
 	.nav-links.open {
 		clip-path: circle(150% at 90% -10%);
 		-webkit-clip-path: circle(150% at 90% -10%);
+		pointer-events: all;
+	}
+	li.grid-main-nav {
+		opacity: 0;
+	}
+	a.nav-anchor {
+		font-size: 2rem;
+	}
+	li.grid-main-nav:nth-child(1) {
+		transition: all 0.5s ease-in-out 0.25s;
+	}
+	li.grid-main-nav:nth-child(2) {
+		transition: all 0.5s ease-in-out 0.5s;
+	}
+	li.grid-main-nav:nth-child(3) {
+		transition: all 0.5s ease-in-out 0.75s;
+	}
+	li.fade {
+		opacity: 1;
 	}
 }
+
+
+
+
+
+
+
+

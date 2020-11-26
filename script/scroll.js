@@ -2,6 +2,7 @@
 
 /////From: https://stackoverflow.com/questions/20632943/how-can-i-make-a-div-disappear-when-scrolling-down-100px-from-the-top
 mouseIcon = document.querySelector('.middle');
+// hamburger = document.querySelector
 
 $(window).bind('scroll', function(){
 	if ($(window).scrollTop() > 100) {

@@ -148,12 +148,17 @@ ul.nav-links {
 	margin-left: auto;
 	z-index: 10;
 }
- 
+
 a.nav-anchor {
 	color: #FCFCFC;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
+a.nav-anchor:hover, a.nav-anchor:focus {
+	background-color: #FCFCFC;
+	color: #58D7F9;
+}
+
 
 
 

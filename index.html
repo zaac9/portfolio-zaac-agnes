@@ -25,7 +25,8 @@
 				</div>
 				<ul class="nav-links">
 					<li class="grid-main-nav">
-						<a href="about.html" role="menuitem" class="nav-anchor">About</a>
+						<a href="#" role="menuitem" class="nav-anchor" id="about-btn">About</a>
+						<!-- <button id="about-btn"></button> -->
 					</li>
 					<li class="grid-main-nav">
 						<a href="#project-showcase" role="menuitem" class="nav-anchor">Work</a>
@@ -35,6 +36,24 @@
 					</li>
 				</ul>
 			</nav>
+
+			<!-- Popup for About -->
+			<div class="modal" id="myModal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p id="about">
+						I am a third-year undergraduate student at the SFU’s School of Interactive Arts and
+						Technology (SIAT) with a focus on user experience (UX) design and frontend
+						development. I initially studied economics at SFU, which has equipped me with problem
+						solving and critical thinking skills that I am able to apply to creative design problems.
+						Design interests me because it challenges me to understand and seek ways to
+						improve the relationship between products and people. I seek to combine technical
+						skills in Adobe Illustrator, Photoshop, Maya, HTML, CSS and JavaScript with knowledge
+						of UX and visual design to help complex problems become simple solutions that
+						people can understand.
+					</p>
+				</div>	
+			</div>
 
 		<!-- </div> -->
 
@@ -62,13 +81,17 @@
 							<h4 class="project-show-subtitle">2019</h4>
 						<!-- </div> -->
 					</a>
-					<div class="project-item" id="discord">
-						<h3 class="project-show-title">Discord Feature</h3>
-						<h4 class="project-show-subtitle">UX Design</h4>
-						<h4 class="project-show-subtitle">2020</h4>
-					</div>
+					<a href="discord.html" class="project-item" id="discord">
+						<!-- <div class="project-item" id="discord"> -->
+							<h3 class="project-show-title">Discord Feature</h3>
+							<h4 class="project-show-subtitle">UX Design</h4>
+							<h4 class="project-show-subtitle">2020</h4>
+						<!-- </div> -->
+					</a>
+
+					<!-- Empty Div below where future project will be placed -->
 					<div class="project-item">
-						
+
 					</div>
 				</div>
 			</section>

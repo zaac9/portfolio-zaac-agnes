@@ -10,6 +10,12 @@ let navbarHeight = navbar.offsetHeight;
 
 let width=window.innerWidth;
 
+
+//// About page Popup
+var modal = document.getElementById("myModal");
+var about = document.getElementById("about-btn");
+var span = document.getElementsByClassName("close")[0];
+
 // console.log("hamburger height: " + hamburgerHeight + "navbar height: " + navbarHeight)
 
 //// Open Menu when click Hamburger
@@ -63,6 +69,29 @@ $(window).scroll(function() {
 		}
 	}
 });
+
+
+//// Popup for About Content from: https://www.w3schools.com/howto/howto_css_modals.asp
+
+// When the user clicks the button, open the modal 
+about.onclick = function() {
+  modal.style.display = "block";
+}
+about.addEventListener("click", function() {
+	modal.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 

@@ -88,32 +88,39 @@
 	}
 
 	/* DISPLAY BURGER MENU */
-	.line {
-		width: 30px;
-		height: 3px;
-		margin: 7px;
-		border-radius: 3px;
-		background: #FCFCFC;
-		-webkit-transition: background: 0.2s ease-in-out;
-		transition: background: 0.2s ease-in-out;
-	}
-/*	.line-color-start {
-		background: #FCFCFC;
-	}
-	.line-color-end {
-		background: #23B2F9;
-	}*/
 	nav.nav-bar {
 		position: relative;
 	}
 	.hamburger {
-		position: absolute;
+		/*position: absolute;*/
 		position: fixed;
 		cursor: pointer;
 		right: 5%;
 		top: 5%;
 		transform: translate(-5%, -50%);
 		z-index: 20;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		margin: 4px;
+		border-radius: 3px;
+		/*background: #FCFCFC;*/
+		background-color: #23B2F9;
+		-webkit-transition: background: 0.2s ease-in-out;
+		transition: background: 0.2s ease-in-out;
+	}
+	#line1 {
+		width: 28px;
+	}
+	#line2 {
+		width: 33px;
+	}
+	#line3 {
+		width: 22px;
 	}
 	ul.nav-links {
 		position: fixed;
@@ -143,6 +150,7 @@
 		width: 100%;
 		margin: auto;
 		padding: 15% 0;
+		color: #FCFCFC;
 	}
 
 	/*Transition when hamburger is opened*/

@@ -48,27 +48,27 @@ hamburger.addEventListener("click", function() {
 	});
 	
 //// Change Hamburger Color when user scrolls down
-$(window).scroll(function() {
-	var scroll=$(window).scrollTop();
+// $(window).scroll(function() {
+// 	var scroll=$(window).scrollTop();
 
-	if(navLinks.classList.contains("open")) {
-		lines.forEach(function(line) {
-			line.style.background="#FCFCFC";
-		});
-	} else {
-		// minus 7 is to compensate for hamburger padding at top
-		if(scroll >= navbarHeight - 7 -hamburgerHeight/2) {
-			lines.forEach(function(line) {
-				line.style.background="#23B2F9";
-			});
+// 	if(navLinks.classList.contains("open")) {
+// 		lines.forEach(function(line) {
+// 			line.style.background="#FCFCFC";
+// 		});
+// 	} else {
+// 		// minus 7 is to compensate for hamburger padding at top
+// 		if(scroll >= navbarHeight - 7 -hamburgerHeight/2) {
+// 			lines.forEach(function(line) {
+// 				line.style.background="#23B2F9";
+// 			});
 
-		} else {
-			lines.forEach(function(line) {
-				line.style.background="#FCFCFC";
-			});
-		}
-	}
-});
+// 		} else {
+// 			lines.forEach(function(line) {
+// 				line.style.background="#FCFCFC";
+// 			});
+// 		}
+// 	}
+// });
 
 
 //// Popup for About Content from: https://www.w3schools.com/howto/howto_css_modals.asp
@@ -77,19 +77,19 @@ $(window).scroll(function() {
 // about.onclick = function() {
 //   modal.style.display = "block";
 // }
-about.addEventListener("click", function() {
-	modal.style.display = "block";
-});
+// about.addEventListener("click", function() {
+// 	modal.style.display = "block";
+// });
 
-span.addEventListener("click", function() {
-	modal.style.display = "none";
-});
+// span.addEventListener("click", function() {
+// 	modal.style.display = "none";
+// });
 
-window.addEventListener("click", function() {
-	if (event.target == modal) {
-		modal.style.display = "none";
-	}
-});
+// window.addEventListener("click", function() {
+// 	if (event.target == modal) {
+// 		modal.style.display = "none";
+// 	}
+// });
 
 
 // When the user clicks on <span> (x), close the modal

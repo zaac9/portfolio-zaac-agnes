@@ -131,41 +131,6 @@ h4.project-show-subtitle {
 }
 
 
-/* STYLING FOR ABOUT POPUP */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 p#about {
 	font-size: 1.5rem;
@@ -306,9 +271,7 @@ a.nav-anchor {
 	/*width: 40px;*/
 }
 .underline {
-	/*background-image: radial-gradient(#fa5914, #58D7F9);*/
 	background-image: radial-gradient(#ffdf2b, #ffdf2b);
-	/*background-image: radial-gradient(#58D7F9, #58D7F9);*/
   	background-repeat: no-repeat;
 	background-size: 100% 0.5em;
 	background-position: 0 110%;
@@ -330,164 +293,6 @@ a.nav-anchor {
 	background-size: 100% 50%;
 	cursor: pointer;
 }
-
-
-/*a.nav-anchor:hover, a.nav-anchor:focus {*/
-	/*background-color: #FCFCFC;*/
-	/*color: #58D7F9;*/
-/*}*/
-
-
-
-
-
-/* STYLING FOR CONTACT */
-.contact {
-	position: relative;
-	/*min-height: 100vh;*/
-	max-width: 100vw;
-	padding: 5% 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.container-contact {
-	width: 100%;
-	display: flex; 
-	justify-content: center;
-	align-items: center;
-	margin-top: 5%;
-}
-.contact-form {
-	width: 100%;
-	padding: 10%;
-	padding-top: 15%;
-	/*removed white bg as it was casuing a problem with the email sign up button*/
-	/*background: white;*/
-}
-h4#contact-title {
-	color: #fa5914;
-	font-size: 1.4rem;
-	font-weight: 300;
-	padding-left: 2%
-}
-.input-box-contact {
-	position: relative; 
-	width: 100%;
-	margin-top: 2%;
-	padding-left: 2%;
-}
-.input-box-contact input.contact-input{
-	width: 100%;
-	padding: 2% 0;
-	padding-left: 2%;
-	font-size: 1rem;
-	border: none;
-	border-bottom: 2px solid #333;
-	outline: none;
-}
-.input-box-contact textarea {
-	width: 100%;
-	padding: 4% 0;
-	padding-left: 2%;
-	font-size: 1rem;
-	border: none;
-	border-bottom: 2px solid #333;
-	outline: none;
-	resize: none;
-}
-.input-box-contact span {
-	left: 0;
-	font-size: 1rem;
-/*	padding: 4% 0;
-	padding-bottom: 10%;*/
-	margin: 3% 0;
-	pointer-events: none;
-	transition: 0.5s;
-	color: #666;
-}
-.input-box-contact input.contact-input:focus ~ span,
-.input-box-contact input.contact-input:valid ~ span,
-.input-box-contact textarea:focus ~ span,
-.input-box-contact textarea:valid ~ span {
-	color: #58D7F9;
-	font-size: 0.8rem;
-	transform: translateY(-1.5rem);
-}
-.input-box-contact input.contact-input[type="submit"] {
-	font-size: 1.2rem;
-	font-weight: 500;
-	width: 100%;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	background-color: #58D7F9;
-	border: 1px solid #FCFCFC;
-	transition: 0.4s;
-}
-.input-box-contact input.contact-input[type="submit"]:hover,
- .input-box-contact input.contact-input[type="submit"]:focus{
-	font-size: 1.2rem;
-	font-weight: 500;
-	width: 100%;
-	color: #58D7F9;
-	border: 1px solid #58D7F9;
-	/*border-radius: 25%;*/
-	/*border: none;*/
-	cursor: pointer;
-	/*padding: 5%;*/
-	background-color: #fff;
-}
-/* STYLING FOR CONTACT END */
-
-
-
-/* MOUSE SCROLL ANIMATION ON HOMEPAGE*/
-/* from: https://www.youtube.com/watch?v=FdFdP4DDz3M*/
-.middle {
-	position: absolute;
-	top: 95%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	/*display: block;*/
-}
-.mouse {
-	opacity: 0.3;
-	width: 50px;
-	height: 90px;
-	border: 2px solid #fa5914;
-	border-radius: 30px;
-	/*border-radius: 40%;*/
-}
-.mouse::before {
-	content: "";
-	width: 9px;
-	height: 9px;
-	position: absolute;
-	top: 65px;
-	background: #fa5914;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 50%;
-	opacity: 1;
-	animation: mouse 1.4s infinite ease-out;
-}
-@keyframes mouse {
-	from {
-		opacity: 0.6;
-		top: 65px;
-	}
-	to {
-		opacity: 0;
-		top: 15px;
-	}
-
-}
-
-/* MOUSE SCROLL ANIMATION END*/
-
-
 
 
 

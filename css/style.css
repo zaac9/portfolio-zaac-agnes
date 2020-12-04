@@ -18,6 +18,9 @@
 html{
 	scroll-behavior: smooth;
 }
+body {
+	background-color: #FCFCFC;
+}
 /*removed h4 from below?*/
 h1, h2, h3 {
 	font-family: 'Quattrocento', serif;
@@ -65,7 +68,7 @@ h2.subtitle {
 	text-align: center;
 	padding-top: 1%;
 }
-p#about-content {
+p.home-subtitle {
 	font-family: 'Montserrat', 'Helvetica', sans-serif;
 	font-size: 1.5rem;
 	/*color: #666;*/
@@ -104,6 +107,24 @@ h4.project-show-subtitle {
 	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 300;
+}
+
+.footer-container {
+	display: flex;
+	margin: 5% 0;
+	padding: 0  5%;
+	background-color: #FCFCFC;
+}
+.footer-content {
+	flex-basis: 50%;
+}
+
+.footer-contact {
+	color:#666666;
+}
+.footer-link {
+	color: #92a1a8;
+	text-decoration: none;
 }
 
 
@@ -276,6 +297,7 @@ a.nav-anchor {
 }
 .project-item:hover > .underline-project{
 	background-size: 100% 50%;
+	cursor: pointer;
 }
 
 

@@ -5,85 +5,112 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Styleguide</title>
 
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/styleguide.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- <link href="//db.onlinewebfonts.com/c/22daa70546f2ddbaec2e9738cac75973?family=WKSROY+Peckham-Regular" rel="stylesheet" type="text/css"/> -->
 </head>
 <body>
 	<div class="background">
 		<!-- <div class="container"> -->
-		<div class= "nav-container">
-			<nav class="nav-bar">
+		<!-- <div class= "nav-container"> -->
+			<nav aria-label="Primary Navigation Bar" class="nav-bar" role="menubar">
+				<div class="hamburger">
+					<div class="line line-color-start" id="line1"></div>
+					<div class="line line-color-start" id="line2"></div>
+					<div class="line line-color-start" id="line3"></div>
+				</div>
+
+
+
 				<ul class="nav-links">
+
 					<li class="grid-main-nav">
-						<a href="">About</a>
+						<a href="about.html" role="menuitem" class="nav-anchor underline" id="about-btn">About</a>
+						<!-- <button id="about-btn"></button> -->
 					</li>
 					<li class="grid-main-nav">
-						<a href="">Work</a>
+						<a href="#project-showcase" role="menuitem" class="nav-anchor underline">Work</a>
 					</li>
 					<li class="grid-main-nav">
-						<a href="">Contact</a>
+						<a href="mailto:zaacagnes9@gmail.com" role="menuitem" class="nav-anchor underline">Contact</a>
 					</li>
 				</ul>
 			</nav>
-		</div>
+
+			<a href="index.html">
+				<div class="icon">
+					<img src="img/icon.png" alt="Z icon that navigates to homepage" class="icon-img">
+				</div>
+			</a>
+
+
+
 
 		<div class="container">
-			<div class="content">
-				<h1>Project Description Template</h1>
-				<div>
-					<h2>Intro</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui quos, magni quibusdam voluptate veniam debitis natus non eum reprehenderit, laboriosam quis ducimus laudantium quisquam eius! Unde nesciunt, eveniet sequi.lorem. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Architecto non eligendi veritatis saepe commodi enim explicabo ea recusandae officia voluptatibus aut autem suscipit, similique distinctio molestiae tempore iste. Velit, dolore.</p>
-					<div class="project-img">
-						<img src="http://lorempixel.com/400/250" alt="">
-					</div>
+			<section id="home">
+				<div class="home-content">
+					<h1 class="main-title" id="home-title">Styleguide</span></h1>
+					<!-- <h2 class="home-subtitle">I'm a UX Designer with a passion for Front-End Web Development</h2> -->
 				</div>
-				<div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui quos, magni quibusdam voluptate veniam debitis natus non eum reprehenderit, laboriosam quis ducimus laudantium quisquam eius! Unde nesciunt, eveniet sequi.lorem. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Architecto non eligendi veritatis saepe commodi enim explicabo ea recusandae officia voluptatibus aut autem suscipit, similique distinctio molestiae tempore iste. Velit, dolore.</p>
-					<div class="project-img">
-						<img src="http://lorempixel.com/400/250" alt="">
-					</div>
-				</div>
-				<div>
-					<h2>Implementations</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui quos, magni quibusdam voluptate veniam debitis natus non eum reprehenderit, laboriosam quis ducimus laudantium quisquam eius! Unde nesciunt, eveniet sequi.lorem. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Architecto non eligendi veritatis saepe commodi enim explicabo ea recusandae officia voluptatibus aut autem suscipit, similique distinctio molestiae tempore iste. Velit, dolore.</p>
-					<div class="project-img">
-						<img src="http://lorempixel.com/450/250" alt="">
-					</div>	
-				</div>
-				<div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui quos, magni quibusdam voluptate veniam debitis natus non eum reprehenderit, laboriosam quis ducimus laudantium quisquam eius! Unde nesciunt, eveniet sequi.lorem. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Architecto non eligendi veritatis saepe commodi enim explicabo ea recusandae officia voluptatibus aut autem suscipit, similique distinctio molestiae tempore iste. Velit, dolore.</p>
-					<div class="project-img">
-						<img src="http://lorempixel.com/500/300" alt="">
-					</div>
-				</div>
-				<div>
-					<h2>Outcomes</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui quos, magni quibusdam voluptate veniam debitis natus non eum reprehenderit, laboriosam quis ducimus laudantium quisquam eius! Unde nesciunt, eveniet sequi.lorem. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Architecto non eligendi veritatis saepe commodi enim explicabo ea recusandae officia voluptatibus aut autem suscipit, similique distinctio molestiae tempore iste. Velit, dolore.</p>
+			</section>
 
-				</div>
-				<div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui quos, magni quibusdam voluptate veniam debitis natus non eum reprehenderit, laboriosam quis ducimus laudantium quisquam eius! Unde nesciunt, eveniet sequi.lorem. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Architecto non eligendi veritatis saepe commodi enim explicabo ea recusandae officia voluptatibus aut autem suscipit, similique distinctio molestiae tempore iste. Velit, dolore.</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="container">
-			<h2>Style Guide</h2>
-<!-- 			<img src="img/styleguide/01-title.jpg" alt="" class="styleguide-img">
-			<img src="img/styleguide/02-color-typography.jpg" alt="" class="styleguide-img"> -->
-			<img src="img/styleguide/01.jpg" alt="" class="styleguide-img">
-			<img src="img/styleguide/02.jpg" alt="" class="styleguide-img">
-		</div>
-
-		<div class="container">
-			<img src="img/project/01-project.png" class="project-img" alt="">
-			<img src="img/project/02-project.png" class="project-img" alt="">
-			<img src="img/project/03-project.png" class="project-img" alt="">
-			<img src="img/project/04-project.png" class="project-img" alt="">
-			<img src="img/project/05-project.png" class="project-img" alt="">
+			<h1>Headings</h1>
+			<p class="h1"></p>
+			<p class="h2"></p>
+			<p class="h3"></p>
 
 		</div>
+
+
+
+
+
+
+
+
+<!-- 
+			<section id="project-showcase">
+				<div class="project-grid">
+					<a href="seoul.html" class="project-item" id="seoul">
+						<img src="img/seoul/titlepage.png" alt="Neon lettering of Seoul on top of greyscale landscape of the South Korean city of Seoul" class="project-image" id="titlepage">
+							<h4 class="project-show-subtitle">Visual Design</h4>
+							<h4 class="project-show-subtitle underline-project">2019</h4>
+					</a>
+					<a href="discord.html" class="project-item" id="discord">
+							<img src="img/discord/titlepage.png" alt="Discord Feature design title page" class="project-image" id="titlepage">
+							<h4 class="project-show-subtitle">UX Design</h4>
+							<h4 class="project-show-subtitle underline-project">2020</h4>
+
+					</a>
+
+				</div>
+			</section>		 -->
+
+
 
 
 	</div>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-content">
+				<a class="footer-link" href="styleguide.html">Styleguide - </a>
+				<a class="footer-link" href="https://github.com/zaac9/portfolio-zaac-agnes">Github - </a>				
+			</div>
+			<div class="footer-content">
+				<div class="footer-contact">
+					<p>Feel free to send me a message</p>
+				</div>
+				<a class="footer-link underline" href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
+			</div>
+	</footer>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script/app.js"></script>
 </body>
 </html>

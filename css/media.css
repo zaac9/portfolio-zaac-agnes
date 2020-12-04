@@ -8,7 +8,6 @@
 	h2.home-subtitle {
 		font-size: 1.2rem;
 		font-weight: 400;
-		color: #58D7F9;
 		text-align: center;
 		padding-top: 1%;
 	}
@@ -27,7 +26,6 @@
 	h2.home-subtitle {
 		font-size: 1.2rem;
 		font-weight: 400;
-		color: #58D7F9;
 		text-align: center;
 		padding-top: 1%;
 	}
@@ -86,6 +84,9 @@
 		align-items: center;
 		margin: 0 5%;
 	}
+	.project-item {
+		margin: 2% 0;
+	}
 
 	/* DISPLAY BURGER MENU */
 	nav.nav-bar {
@@ -109,7 +110,8 @@
 		margin: 4px;
 		border-radius: 3px;
 		/*background: #FCFCFC;*/
-		background-color: #23B2F9;
+		/*background: #ffdf2b;*/
+		background: #ffdf2b;
 		-webkit-transition: background: 0.2s ease-in-out;
 		transition: background: 0.2s ease-in-out;
 	}
@@ -124,7 +126,8 @@
 	}
 	ul.nav-links {
 		position: fixed;
-		background: #23B2F9;
+		/*background: #23B2F9;*/
+		background: #fa5914;
 		height: 100vh;
 		width: 100vw;
 		padding-top: 15%;

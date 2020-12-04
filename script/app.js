@@ -23,9 +23,20 @@ hamburger.addEventListener("click", function() {
 	navLinks.classList.toggle("open");
 	console.log("clicked hamburger");
 
+	if(navLinks.classList.contains("open")) {
+		lines.forEach(function(l) {
+			l.style.background="#FCFCFC";
+		});
+	} else {
+		lines.forEach(function(l) {
+			l.style.background="#ffdf2b";
+		});
+		
+	}
+
+
 	links.forEach(function(link) {
 		link.classList.toggle("fade");
-
 	});
 });
 
@@ -36,13 +47,15 @@ hamburger.addEventListener("click", function() {
 			if (screen.width<768) {
 				navLinks.classList.toggle("open");
 				console.log("clicked a nav-link");
-
-
 				//// Toggle fade class so it works next time hamburger is clicked
 				links.forEach(function(l){
 					l.classList.toggle("fade");
 				});
+				lines.forEach(function(l) {
+					l.style.background="#ffdf2b";
+				});
 			}
+
 		})
 
 	});
@@ -51,10 +64,10 @@ hamburger.addEventListener("click", function() {
 // $(window).scroll(function() {
 // 	var scroll=$(window).scrollTop();
 
-// 	if(navLinks.classList.contains("open")) {
-// 		lines.forEach(function(line) {
-// 			line.style.background="#FCFCFC";
-// 		});
+	// if(navLinks.classList.contains("open")) {
+	// 	lines.forEach(function(line) {
+	// 		line.style.background="#FCFCFC";
+	// 	});
 // 	} else {
 // 		// minus 7 is to compensate for hamburger padding at top
 // 		if(scroll >= navbarHeight - 7 -hamburgerHeight/2) {

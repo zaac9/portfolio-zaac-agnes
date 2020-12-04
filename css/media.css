@@ -87,6 +87,11 @@
 		line-height: 1.6rem;
 	}
 
+	img#portrait {
+		max-width: 100%;
+		align-content: center;
+	}
+
 }
 
 
@@ -105,7 +110,7 @@
 		margin: 2% 0;
 	}
 	.footer-container {
-		flex-flow: column;
+		flex-direction: column;
 		text-align: center;
 	}
 	.footer-contact {
@@ -121,6 +126,16 @@
 	.icon-img {
 		height: 30px;
 		width: 30px;
+	}
+
+	.about-container {
+		flex-direction: column;
+	}
+	.about-content {
+		padding: 5% 15%;
+	}
+	img#portrait {
+		max-width: 80%;
 	}
 	/* DISPLAY BURGER MENU */
 	nav.nav-bar {

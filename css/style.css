@@ -60,7 +60,7 @@ h1.main-title {
 	color: #92a1a8;
 }
 
-h2.subtitle {
+.subtitle {
 	font-family: 'Montserrat', 'Helvetica', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -68,9 +68,10 @@ h2.subtitle {
 	text-align: center;
 	padding-top: 1%;
 }
-p.home-subtitle {
+.home-subtitle {
 	font-family: 'Montserrat', 'Helvetica', sans-serif;
 	font-size: 1.5rem;
+	line-height: 2.4;
 	/*color: #666;*/
 	color: #92a1a8;
 }
@@ -112,7 +113,7 @@ h4.project-show-subtitle {
 .footer-container {
 	display: flex;
 	margin: 5% 0;
-	padding: 0  5%;
+	padding: 0 5%;
 	background-color: #FCFCFC;
 }
 .footer-content {
@@ -121,10 +122,12 @@ h4.project-show-subtitle {
 
 .footer-contact {
 	color:#666666;
+	padding-top: 1%;
 }
 .footer-link {
 	color: #92a1a8;
 	text-decoration: none;
+	padding-top: 1%;
 }
 
 
@@ -273,7 +276,24 @@ a.nav-anchor {
 	color: inherit;
 	padding: 5% 10%;
 }
+.icon {
+	position: absolute;
+	left: 5%;
+	/*top: 5%;*/
+	transform: translate(-5%, -140%);
+	z-index: 40;
+}
+.icon:hover, .icon:focus {
+	cursor: pointer;
+}
+.icon-img:hover {
+	cursor: pointer;
+}
 
+.icon-img {
+	height: 40px;
+	/*width: 40px;*/
+}
 .underline {
 	/*background-image: radial-gradient(#fa5914, #58D7F9);*/
 	background-image: radial-gradient(#ffdf2b, #ffdf2b);
@@ -283,7 +303,7 @@ a.nav-anchor {
 	background-position: 0 110%;
 	transition: background-size 0.25s ease-in;
 }
-.underline:hover{
+.underline:hover, .underline:focus{
 	background-size: 100% 50%;
 }
 .underline-project {
@@ -295,7 +315,7 @@ a.nav-anchor {
 	background-position: 0 110%;
 	transition: background-size 0.25s ease-in;
 }
-.project-item:hover > .underline-project{
+.project-item:hover > .underline-project, .project-item:focus > .underline-project{
 	background-size: 100% 50%;
 	cursor: pointer;
 }

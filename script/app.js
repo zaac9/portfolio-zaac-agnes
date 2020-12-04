@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".grid-main-nav");
+const icon = document.querySelector(".icon");
 
 let lines = document.querySelectorAll('.line');
 let navbar = document.querySelector('.nav-bar');
@@ -24,10 +25,19 @@ hamburger.addEventListener("click", function() {
 	console.log("clicked hamburger");
 
 	if(navLinks.classList.contains("open")) {
+		// setTimeout (function() {
+		// 	navbar.style.background="#fa5914";
+		// }, 150);
+		icon.classList.add("icon-fixed");
+
 		lines.forEach(function(l) {
 			l.style.background="#FCFCFC";
 		});
 	} else {
+		// setTimeout (function() {
+		// 	navbar.style.background="#FCFCFC";
+		// }, 150);
+		icon.classList.remove("icon-fixed");
 		lines.forEach(function(l) {
 			l.style.background="#ffdf2b";
 		});
